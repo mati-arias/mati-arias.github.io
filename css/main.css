@@ -1,0 +1,178 @@
+/* General  */
+:root {
+    --max-width: 1280px;
+    --min-width: 320px;
+    --accent-color: #00c2ff;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(26, 26, 26);
+    color: white;
+    font-family: Roboto, sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .book-appointment {
+    background-color: var(--accent-color);
+    padding: 1rem 2rem;
+    font-size: 24px;
+  }
+  
+  
+  .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    min-width: var(--min-width);
+    background-image: url('../img/background_01.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: background-image 0.7s ease-in-out;
+  }
+  
+  .header,
+  .content,
+  .footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: var(--max-width);
+  }
+  
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+  .foto {
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    font-weight: bold;
+    
+  }
+  
+  .foto-imagen {
+    margin-right: 0.5rem;
+    grid-area: img;
+    width: 40%;
+  }
+  #boton,
+  #boton2,
+  #boton3
+  {
+    
+    background-color: rgb(26, 26, 26);
+    padding: 15px;
+    font-size: larger;
+    color: white;
+    border-bottom: solid 4px #00c2ff;
+    border-right: solid 4px #00c2ff;
+    border-radius: 50%;
+    margin: 5px;
+    
+  }
+  
+  button:hover{
+    transition: ease-out 2s;
+    transform: scale(115%);
+
+  }
+
+  
+  .hide{
+    display: none;
+    
+   
+  }
+
+  .show{
+    display: block;
+    
+  }
+
+
+  
+  .datosPersonales{
+    text-align: left;
+   
+
+  }
+  
+
+  .menu-list__item {
+    display: contents;
+    margin: 0 0.5rem;
+    font-size: 24px;
+    
+    
+  }
+    
+
+
+  .content {
+    flex-grow: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+  }
+  
+
+    
+  .content__claim {
+    font-size: 64px;
+    color: var(--accent-color);
+    margin: 0;
+  }
+  
+  .content__subclaim {
+    font-size: 36px;
+    margin: 0.5rem 0;
+    margin-bottom: 2rem;
+  }
+  
+  
+  .footer-wrapper {
+    background-color:rgb(26, 26, 26);
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer__widget {
+    font-size: 24px;
+  }
+  
+  .footer__widget__title {
+    color: var(--accent-color);
+    margin: 0 0 1rem 0;
+  }
+  
+  .footer__widget__text {
+    margin: 0;
+  }
+  
+  
